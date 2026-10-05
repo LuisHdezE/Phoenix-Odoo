@@ -3,8 +3,34 @@
 **Repositorio:** `LuisHdezE/Phoenix-Odoo`  
 **Estado:** Definición funcional y técnica  
 **Tipo de proyecto:** Laboratorio ERP profesional sobre Odoo  
-**Fase actual:** Documentación únicamente  
+**Fase actual:** Planificación completada · `READY_FOR_CONFIGURATION`  
+**Configuración Odoo:** No iniciada  
 **Código de aplicación:** No iniciado  
+**Desarrollador/learner:** Luis Hernández  
+
+---
+
+## Documentos de planificación vigentes
+
+Phoenix se gobierna actualmente mediante estos documentos:
+
+1. [PHOENIX_SPEC_MASTER.md](./PHOENIX_SPEC_MASTER.md) — alcance funcional y definición maestra.
+2. [PHOENIX_BLUEPRINT_PLANNING.md](./PHOENIX_BLUEPRINT_PLANNING.md) — aplicación de la versión multiagente más reciente del Software Development Blueprint, arquitectura, agentes, límites y `STOP_GATE`.
+3. [PHOENIX_LEARNING_ROADMAP.md](./PHOENIX_LEARNING_ROADMAP.md) — curso práctico de cero a nivel profesional en el que Luis configura, desarrolla, prueba y despliega Phoenix.
+
+### Regla de aprendizaje
+
+La IA puede actuar como tutor, analista, revisor, debugger y auditor. La configuración y el desarrollo de Phoenix corresponden al desarrollador humano para preservar el objetivo de aprendizaje.
+
+### Baseline técnico aprobado para iniciar el curso
+
+- **Odoo:** 19
+- **Edición:** Community
+- **Base de datos:** PostgreSQL
+- **Estrategia de extensión:** addons propios sin modificar el core
+- **Despliegue objetivo:** Oracle Cloud Infrastructure, Ampere A1, Ubuntu 24.04, Docker/Compose, PostgreSQL y reverse proxy/TLS
+
+La configuración real comienza únicamente cuando Luis inicie explícitamente el roadmap de aprendizaje.
 
 ---
 
@@ -1105,19 +1131,41 @@ La evidencia deberá estar en el repositorio y en una demo reproducible.
 
 ---
 
-# 29. Próxima decisión
+# 29. Estado de planificación y próximo gate
 
-El siguiente gate de Phoenix será **P0 · Descubrimiento**.
+P0 · Descubrimiento queda suficientemente definido para iniciar el aprendizaje guiado.
 
-Antes de escribir código deberán quedar resueltos:
+Decisiones congeladas para el arranque:
 
-1. versión objetivo de Odoo;
-2. Community vs Enterprise;
-3. módulos estándar disponibles;
-4. qué requisitos son configuración;
-5. qué requisitos requieren addons propios;
-6. alcance financiero viable en el laboratorio;
-7. estrategia de localización Uruguay;
-8. entorno local y de despliegue.
+1. Odoo 19 Community como baseline de aprendizaje;
+2. PostgreSQL como motor de persistencia;
+3. estrategia estándar primero y personalización solo ante gaps demostrados;
+4. addons Phoenix separados del core;
+5. alcance funcional completo definido;
+6. cuentas por cobrar, cuentas por pagar, tesorería y contabilidad incluidas;
+7. controles de crédito, aprobación de compras y scoring de proveedores como personalizaciones previstas;
+8. integración externa y API propia incluidas;
+9. Oracle Cloud Infrastructure como destino de deployment profesional;
+10. localización/fiscalidad uruguaya certificada fuera del alcance v1 hasta validación específica.
 
-Hasta cerrar ese gate, Phoenix permanece en fase documental.
+## STOP GATE
+
+Estado:
+
+```text
+READY_FOR_CONFIGURATION
+```
+
+A partir de aquí la planificación se detiene.
+
+No se debe:
+
+- instalar o configurar Odoo automáticamente;
+- crear addons Phoenix;
+- escribir código de implementación;
+- realizar deployment;
+- adelantar módulos del curso.
+
+El siguiente paso pertenece a Luis y comienza en **Module 0** de `PHOENIX_LEARNING_ROADMAP.md`.
+
+La IA acompañará como tutor y revisor. Luis realizará la configuración y el desarrollo.
